@@ -6,6 +6,10 @@ var GiftBox = React.createClass({
 		};
 	},
 	updateItems: function(newItem){
+		if( this.state.items.indexOf(newItem) >=0 ){
+			return false;
+		}
+		
 		var items = this.state.items.concat([newItem]);
 		this.saveItem(items);
 	},

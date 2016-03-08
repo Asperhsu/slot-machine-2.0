@@ -2,7 +2,7 @@
 	height:100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 
 	> div {
 		text-align: center;
@@ -10,6 +10,14 @@
 
 	input.display{
 		display:none;
+	}
+
+	#flapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/*flex-basis: 50%;*/
+		flex-grow: 2;
 	}
 }
 
@@ -19,16 +27,30 @@
 	justify-content: center;
 	align-items: center;
 
+	min-height:1.5em;
+	
+	.icon{
+		font-size:2.5em;
+		padding:5px 10px 5px 0px;
+	}
 	.name{
 		font-size:3em;
-		width:95%;
 	}
 }
 
 
-#btns .btn{ 
-	font-size:2em; 
-	width:30%; 
-	margin:0.2em; 
-	padding:0.2em 0.5em;
-}
+#btns{
+	.btn{ 
+		font-size:2em;  
+		margin:0.2em; 
+		padding:0.2em 0.5em;
+	}
+
+	#btn-start{
+		width:40%;
+	}
+
+	#btn-next-gift, #btn-reroll{
+		width:20%;
+	}
+} 

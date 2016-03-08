@@ -1,7 +1,5 @@
 $(function(){
-	slot.init();
-	Flapper.init();
-
+	//nav
 	$("#side-nav a").click(function(){
 		$(this).parents('#side-nav').toggleClass('active');
 	});
@@ -9,6 +7,15 @@ $(function(){
 		$(this).parents('#side-nav').toggleClass('active');
 	});
 
+	// tab shown event
+	$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+		if( $(e.target).attr('href') == '#tab-slot' ){
+			slot.init();
+			Flapper.init();
+		}
+	});
+
+	//sortable initial
 	$("#giftBox, #peopleBox").on("loaded", function(){		
 		var $el = $(this);
 		$(this).find('ul').sortable({
@@ -26,6 +33,7 @@ $(function(){
 		}).disableSelection();
 	});
 
+	//clear award history
 	$("#award-clear").click(function(){
 		slot.clearResult();
 		location.reload();

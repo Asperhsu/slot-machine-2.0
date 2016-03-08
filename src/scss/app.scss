@@ -2,6 +2,7 @@ html, body{
 	height:100%;
 	color:#eee;
 	background-color: #333;
+	font-size:14px;
 }
 
 .tab-content{  
@@ -10,9 +11,14 @@ html, body{
 	> div{  
 		height:100%;
 	}
+
+	.list-group-item{
+		font-size:1.5em;
+	}
 }
 
 @import "partials/side-nav";
+@import "partials/tab-manual";
 @import "partials/tab-slot";
 @import "partials/tab-gifts";
 @import "partials/tab-people";

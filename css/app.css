@@ -1,12 +1,15 @@
 html, body {
   height: 100%;
   color: #eee;
-  background-color: #333; }
+  background-color: #333;
+  font-size: 14px; }
 
 .tab-content {
   height: 100%; }
   .tab-content > div {
     height: 100%; }
+  .tab-content .list-group-item {
+    font-size: 1.5em; }
 
 #side-nav {
   background: #fff;
@@ -30,35 +33,61 @@ html, body {
   right: -45px;
   top: 5px; }
 
+#tab-manual {
+  padding: 20px; }
+  #tab-manual li {
+    padding: 3px 2px;
+    line-height: 1.6; }
+
 #slot {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-around; }
   #slot > div {
     text-align: center; }
   #slot input.display {
     display: none; }
+  #slot #flapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-basis: 50%;*/
+    flex-grow: 2; }
 
 #gift {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  min-height: 1.5em; }
+  #gift .icon {
+    font-size: 2.5em;
+    padding: 5px 10px 5px 0px; }
   #gift .name {
-    font-size: 3em;
-    width: 95%; }
+    font-size: 3em; }
 
 #btns .btn {
   font-size: 2em;
-  width: 30%;
   margin: 0.2em;
   padding: 0.2em 0.5em; }
 
-#tab-gifts .list-group-item {
-  background-color: transparent; }
+#btns #btn-start {
+  width: 40%; }
 
-#tab-people .list-group-item {
-  background-color: transparent; }
+#btns #btn-next-gift, #btns #btn-reroll {
+  width: 20%; }
 
-#tab-award .list-group-item {
-  background-color: transparent; }
+#tab-gifts {
+  padding: 20px; }
+  #tab-gifts .list-group-item {
+    background-color: transparent; }
+
+#tab-people {
+  padding: 20px; }
+  #tab-people .list-group-item {
+    background-color: transparent; }
+
+#tab-award {
+  padding: 20px; }
+  #tab-award .list-group-item {
+    background-color: transparent; }

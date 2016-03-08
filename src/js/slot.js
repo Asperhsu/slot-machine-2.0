@@ -1,4 +1,5 @@
 var slot = {
+	isInit: false,
 	awards: {},
 	gifts: [],
 	people: [],
@@ -20,6 +21,10 @@ var slot = {
 			this.disableStartBtn(true);
 			return false;
 		}
+
+		if( this.isInit ){			
+			return true;
+		}this.isInit = true;
 
 		this.registerEvent();
 		this.prepareNextRoll();

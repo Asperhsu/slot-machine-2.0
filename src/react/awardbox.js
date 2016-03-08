@@ -31,7 +31,7 @@ var AwardBox = React.createClass({
 var AwardHeader = React.createClass({
 	render() {
 		return (
-			<h2>得獎名單<small>此清單會儲存於瀏覽器內</small></h2>
+			<h2>得獎名單<br/><small>此清單會儲存於瀏覽器內</small></h2>
 		);
 	}
 });
@@ -45,8 +45,8 @@ var AwardList = React.createClass({
 
 				rows.push(
 					<li key={award} className="list-group-item ui-state-default row">
-						<div className="pull-left">{award}</div>
-						<div className="pull-right">{people}</div>
+						<div className="pull-left"><span className="icon glyphicon glyphicon-gift"></span> {award}</div>
+						<div className="pull-right"><span className="icon glyphicon glyphicon-user"></span> {people}</div>
 					</li>
 				);
 

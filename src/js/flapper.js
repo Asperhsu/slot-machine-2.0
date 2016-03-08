@@ -1,4 +1,5 @@
 var Flapper = {
+	isInit: false,
 	container: "#flapper",
 	element: "input.display",
 	options: {
@@ -11,6 +12,10 @@ var Flapper = {
 
 	},
 	init: function(){
+		if( this.isInit ){
+			return true;
+		}this.isInit = true;
+
 		var _this = this;
 		this.options.on_anim_start = function(){
 			var str = $(_this.element, _this.container).val();
