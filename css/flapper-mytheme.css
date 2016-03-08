@@ -1,0 +1,83 @@
+/* All Smartphones in landscape ----------- */
+@media only screen and (max-width: 720px) {
+  .flapper.mytheme {
+    line-height: 150px;
+    height: 150px;
+    font-size: 130px; }
+  .flapper.mytheme .digit, .flapper.mytheme .digit div {
+    height: 150px;
+    width: 150px; }
+  .flapper.mytheme .digit .top {
+    clip: rect(0px, 150px, 73px, 0px); }
+  .flapper.mytheme .digit .bottom {
+    clip: rect(77px, 150px, 148px, 0px); } }
+
+/* All Smartphones in portrait ----------- */
+@media only screen and (max-width: 479px) {
+  .flapper.mytheme {
+    line-height: 100px;
+    height: 100px;
+    font-size: 80px; }
+  .flapper.mytheme .digit, .flapper.mytheme .digit div {
+    height: 100px;
+    width: 100px; }
+  .flapper.mytheme .digit .top {
+    clip: rect(0px, 100px, 48px, 0px); }
+  .flapper.mytheme .digit .bottom {
+    clip: rect(52px, 100px, 98px, 0px); } }
+
+/* iPad in portrait*/
+@media only screen and (min-width: 720px) and (max-width: 1000px) {
+  .flapper.mytheme {
+    line-height: 230px;
+    height: 230px;
+    font-size: 210px; }
+  .flapper.mytheme .digit, .flapper.mytheme .digit div {
+    height: 230px;
+    width: 230px; }
+  .flapper.mytheme .digit .top {
+    clip: rect(0px, 230px, 113px, 0px); }
+  .flapper.mytheme .digit .bottom {
+    clip: rect(117px, 230px, 228px, 0px); } }
+
+/* iPad in landscape*/
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .flapper.mytheme {
+    line-height: 320px;
+    height: 320px;
+    font-size: 300px; }
+  .flapper.mytheme .digit, .flapper.mytheme .digit div {
+    height: 320px;
+    width: 320px; }
+  .flapper.mytheme .digit .top {
+    clip: rect(0px, 320px, 158px, 0px); }
+  .flapper.mytheme .digit .bottom {
+    clip: rect(162px, 320px, 318px, 0px); } }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1200px) {
+  .flapper.mytheme {
+    line-height: 380px;
+    height: 380px;
+    font-size: 360px; }
+  .flapper.mytheme .digit, .flapper.mytheme .digit div {
+    height: 380px;
+    width: 380px; }
+  .flapper.mytheme .digit .top {
+    clip: rect(0px, 380px, 188px, 0px); }
+  .flapper.mytheme .digit .bottom {
+    clip: rect(192px, 380px, 378px, 0px); } }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1600px) {
+  .flapper.mytheme {
+    line-height: 520px;
+    height: 520px;
+    font-size: 500px; }
+  .flapper.mytheme .digit, .flapper.mytheme .digit div {
+    height: 520px;
+    width: 520px; }
+  .flapper.mytheme .digit .top {
+    clip: rect(0px, 520px, 258px, 0px); }
+  .flapper.mytheme .digit .bottom {
+    clip: rect(262px, 520px, 518px, 0px); } }

@@ -1,0 +1,19 @@
+html, body{
+	height:100%;
+	color:#eee;
+	background-color: #333;
+}
+
+.tab-content{  
+	height:100%;
+
+	> div{  
+		height:100%;
+	}
+}
+
+@import "partials/side-nav";
+@import "partials/tab-slot";
+@import "partials/tab-gifts";
+@import "partials/tab-people";
+@import "partials/tab-award";

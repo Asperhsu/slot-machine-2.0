@@ -1,0 +1,34 @@
+#slot{
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	> div {
+		text-align: center;
+	}
+
+	input.display{
+		display:none;
+	}
+}
+
+
+#gift{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.name{
+		font-size:3em;
+		width:95%;
+	}
+}
+
+
+#btns .btn{ 
+	font-size:2em; 
+	width:30%; 
+	margin:0.2em; 
+	padding:0.2em 0.5em;
+}

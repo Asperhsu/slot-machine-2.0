@@ -1,0 +1,23 @@
+#side-nav{
+	background:#fff;
+	color:#000;
+	width:250px;
+	height:100%;
+	float:left;
+	position: absolute;
+	top:0;
+	left:-250px;
+	z-index:1000;
+	opacity: 0.9;
+	padding:20px;
+}
+#side-nav.active{
+	left: 0px;
+}
+
+#nav-btn{
+	float:right;
+	position: absolute;
+	right:-45px;
+	top: 5px;
+}

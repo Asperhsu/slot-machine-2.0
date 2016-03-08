@@ -1,0 +1,48 @@
+@mixin flapperSize($width:1em, $height:$width){
+	.flapper.mytheme{
+		line-height: $height;
+		height: $height;
+		font-size: $height - 20px;
+	}
+	.flapper.mytheme .digit, .flapper.mytheme .digit div{
+		height: $height;
+		width: $width;
+	}
+	.flapper.mytheme .digit .top {
+	    clip: rect(0px, $width, $height/2-2px, 0px);
+	}
+
+	.flapper.mytheme .digit .bottom {
+	    clip: rect($height/2+2px, $width, $height - 2px, 0px);
+	}
+}
+
+/* All Smartphones in landscape ----------- */
+@media only screen and (max-width: 720px) {
+	@include flapperSize(150px);
+}
+
+/* All Smartphones in portrait ----------- */
+@media only screen and (max-width: 479px) {
+	@include flapperSize(100px);
+}
+
+/* iPad in portrait*/
+@media only screen and (min-width: 720px) and (max-width: 1000px) {
+	@include flapperSize(230px);
+}
+
+/* iPad in landscape*/
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+	@include flapperSize(320px);
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1200px) {
+	@include flapperSize(380px);
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1600px) {
+	@include flapperSize(520px);
+}

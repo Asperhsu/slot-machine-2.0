@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>命運青紅燈</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/flapper.css">
+		<link rel="stylesheet" href="css/flapper-mytheme.css">
+		<link rel="stylesheet" href="css/app.css">
+		<!-- <link rel="stylesheet" href="css/flapper-mytheme.old.css"> -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div id="side-nav">
+			<button id="nav-btn" class="btn btn-default">
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</button>
+
+			<h1>命運青紅燈</h1>			
+			<hr/>			
+
+			<h3><a href="#tab-slot" aria-controls="slot" role="tab" data-toggle="tab">拉霸</a></h3>		
+			<h3><a href="#tab-gifts" aria-controls="gifts" role="tab" data-toggle="tab">獎品清單</a></h3>	
+			<h3><a href="#tab-people" aria-controls="slot" role="tab" data-toggle="tab">人員名單</a></h3>
+			<h3><a href="#tab-award" aria-controls="slot" role="tab" data-toggle="tab">得獎名單</a></h3>
+		</div>
+
+
+		<div class="tab-content">
+			<div id="tab-slot"  role="tabpanel" class="tab-pane active">
+				<div id="slot">
+					<div class="" id="gift">
+						<div class="name"></div>
+					</div>
+
+					<div class="" id="flapper">
+						<input class="display XXL mytheme" />
+					</div>
+
+					<div class="" id="btns">
+						<button class='btn btn-success' type="button" id="btn-next-gift" disabled="true">Next</button>
+						<button class='btn btn-primary' type="button" id="btn-start">GO!</button>
+						<button class='btn btn-danger' type="button" id="btn-reroll" disabled="true">重抽</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="tab-gifts" role="tabpanel" class="tab-pane ">			
+				<div id="giftBox" class="col-sm-offset-3 col-sm-6"></div>
+			</div>
+
+			<div id="tab-people" role="tabpanel" class="tab-pane ">
+				<div id="peopleBox" class="col-sm-offset-3 col-sm-6"></div>
+			</div>
+
+			<div id="tab-award" role="tabpanel" class="tab-pane ">
+				<div class="col-sm-offset-3 col-sm-6 col-xs-12">
+					<div id="awardBox"></div>
+					<button type="button" class="btn btn-danger" id="award-clear">Clear</button>
+				</div>
+			</div>
+		</div>
+		
+
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://fb.me/react-0.14.7.js"></script>
+		<script src="https://fb.me/react-dom-0.14.7.js"></script>
+		<script src="js/all.js"></script>
+		<script src="js/react.js"></script>		
+	</body>
+</html>
